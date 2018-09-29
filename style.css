@@ -1,0 +1,153 @@
+.navbar {
+    background-color: aliceblue;
+}
+
+/*ABOUT*/
+.about--page {
+    min-height: 100vh;
+    background-color: hotpink;
+}
+/*MEDIA ICONS*/
+
+.media--icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: fixed;
+    left: 3%;
+}
+
+.media--icon__circle {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 56px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+}
+.media--icon__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    cursor: pointer;
+}
+.media--icon__wrapper i {
+    transform: scale(1.9);
+    color: white;
+    transition: all 0.5s ease;
+}
+.media--icon__wrapper:hover > .media--icon__circle{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 56px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    transition-delay: 0.15s ;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*PORTFOLIO*/
+.portfolio--page {
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+/*CONTACT*/
+.contact--page {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('images/astronomy-cosmos-dark-733475.jpg');
+    background-size: cover;
+}
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contactForm--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.contact--info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-top: 7%;
+}
+.contact--info h1 {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.contact--info__detail {
+    display: flex;
+    margin-top: 4%;
+    width: 80%;
+    margin-left: 12%;
+}
+.contact--info__detail p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.contactForm--nameEmail {
+    display: flex;
+    justify-content: space-between;
+}
+.contactForm--nameEmail input {
+    width: 210px;
+}
+.form-group {
+    width: 80%;
+}
+.form-control {
+    border: none;
+    border-radius: 0;
+}
+.textArea {
+    resize: none;
+    height: 200px !important;
+}
+.contact--btn__submit {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+.contact--btn__submit:hover i {
+    transform: rotate(20deg);
+    transition: transform .15s;
+}
+
+.contact--btn__submit:focus {
+    outline: none;
+}
+.contactForm--alert {
+    position: absolute;
+    display: none;
+}
