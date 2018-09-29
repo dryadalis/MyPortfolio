@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
 <!--NAVIGATION-->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
             <a class="navbar-brand" href="#">Karolina Romanska</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+            <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link" data-scroll href="#about" >ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        <a class="nav-link" data-scrol href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
+                        <a class="nav-link" data-scrol href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -37,16 +37,16 @@
 <section class="about--page" id="about">
     <div class="media--icons">
         <div class="media--icon__wrapper">
-            <div class="media--icon__circle"></div>
-            <i class="fab fa-linkedin-in "></i>
+            <span class="media--icon__circle"></span>
+            <a href="https://www.linkedin.com/in/karolinaroma%C5%84ska/" target="_blank"><i class="fab fa-linkedin-in "></i></a>
         </div>
         <div class="media--icon__wrapper">
-            <div class="media--icon__circle"></div>
-            <i class="fab fa-github "></i>
+            <span class="media--icon__circle"></span>
+            <a href="https://github.com/dryadalis"><i class="fab fa-github "></i></a>
         </div>
         <div class="media--icon__wrapper">
-            <div class="media--icon__circle"></div>
-            <i class="fas fa-envelope "></i>
+            <span class="media--icon__circle"></span>
+            <a href="#contact"><i class="fas fa-envelope "></i></a>
         </div>
 
     </div>
