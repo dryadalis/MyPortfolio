@@ -42,6 +42,9 @@ document.getElementById("dot2").addEventListener("click", () => {
 document.getElementById("dot3").addEventListener("click", () => {
     currentSlide(3)
 });
+document.getElementById("dot4").addEventListener("click", () => {
+    currentSlide(4)
+});
 
 document.getElementById("prev").addEventListener("click", () => {
     plusSlides(-1);
@@ -50,3 +53,4 @@ document.getElementById("next").addEventListener("click", () => {
     plusSlides(1);
 })
 showSlides(slideIndex);
+
